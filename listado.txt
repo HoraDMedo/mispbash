@@ -1,0 +1,218 @@
+HTTP/1.1 200 OK
+Date: Tue, 24 May 2022 09:56:38 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Upgrade: h2
+Connection: Upgrade
+Set-Cookie: MISP-8ec7dd4f-c162-413b-b8a9-9b0fb4e8b082=7jie8d9r9h7nqo5prhh6d14fckmpgpqb; expires=Thu, 26-May-2022 21:56:38 GMT; Max-Age=216000; path=/; secure; HttpOnly; SameSite=Lax
+Set-Cookie: MISP-8ec7dd4f-c162-413b-b8a9-9b0fb4e8b082=7jie8d9r9h7nqo5prhh6d14fckmpgpqb; expires=Thu, 26-May-2022 21:56:38 GMT; Max-Age=216000; path=/; secure; HttpOnly; SameSite=Lax
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Last-Modified: Tue, 24 May 2022 09:56:38 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+X-Username: usuario@admin.test/API/9
+X-Result-Count: 6
+Content-Length: 5665
+Content-Type: application/json; charset=UTF-8
+
+[
+    {
+        "id": "1",
+        "org_id": "1",
+        "date": "2022-05-18",
+        "info": "Ips Maliciosas",
+        "uuid": "ebd481a9-cc34-4326-90d6-cb15bcdf1939",
+        "published": true,
+        "analysis": "0",
+        "attribute_count": "0",
+        "orgc_id": "1",
+        "timestamp": "1652869145",
+        "distribution": "1",
+        "sharing_group_id": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "threat_level_id": "1",
+        "publish_timestamp": "1652870056",
+        "sighting_timestamp": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "Org": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "Orgc": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "EventTag": []
+    },
+    {
+        "id": "2",
+        "org_id": "1",
+        "date": "2015-01-01",
+        "info": "testevent",
+        "uuid": "3d6b6c11-2990-43e1-a553-3042fd512935",
+        "published": false,
+        "analysis": "0",
+        "attribute_count": "1",
+        "orgc_id": "1",
+        "timestamp": "1652946911",
+        "distribution": "0",
+        "sharing_group_id": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "threat_level_id": "1",
+        "publish_timestamp": "0",
+        "sighting_timestamp": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "Org": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "Orgc": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "EventTag": []
+    },
+    {
+        "id": "4",
+        "org_id": "1",
+        "date": "2022-05-19",
+        "info": "Ips Maliciosas",
+        "uuid": "3fd5b2d6-5a82-480d-a531-e4137f762393",
+        "published": false,
+        "analysis": "1",
+        "attribute_count": "2044",
+        "orgc_id": "1",
+        "timestamp": "1652960339",
+        "distribution": "1",
+        "sharing_group_id": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "threat_level_id": "1",
+        "publish_timestamp": "0",
+        "sighting_timestamp": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "Org": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "Orgc": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "EventTag": []
+    },
+    {
+        "id": "5",
+        "org_id": "1",
+        "date": "2022-05-19",
+        "info": "NombresDeDominio",
+        "uuid": "e331a688-779e-48bd-a871-e06918a8a33a",
+        "published": false,
+        "analysis": "1",
+        "attribute_count": "51",
+        "orgc_id": "1",
+        "timestamp": "1652960444",
+        "distribution": "1",
+        "sharing_group_id": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "threat_level_id": "1",
+        "publish_timestamp": "0",
+        "sighting_timestamp": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "Org": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "Orgc": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "EventTag": []
+    },
+    {
+        "id": "6",
+        "org_id": "1",
+        "date": "2015-01-01",
+        "info": "SamuelAPI",
+        "uuid": "67073b78-5393-44b4-91a7-f235214f3d74",
+        "published": false,
+        "analysis": "0",
+        "attribute_count": "1",
+        "orgc_id": "1",
+        "timestamp": "1653042676",
+        "distribution": "0",
+        "sharing_group_id": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "threat_level_id": "1",
+        "publish_timestamp": "0",
+        "sighting_timestamp": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "Org": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "Orgc": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "EventTag": []
+    },
+    {
+        "id": "7",
+        "org_id": "1",
+        "date": "2015-01-01",
+        "info": "SamuelAPI",
+        "uuid": "aeb1f215-8b59-48f2-b207-95ca0ecfb428",
+        "published": false,
+        "analysis": "0",
+        "attribute_count": "1",
+        "orgc_id": "1",
+        "timestamp": "1653382098",
+        "distribution": "0",
+        "sharing_group_id": "0",
+        "proposal_email_lock": false,
+        "locked": false,
+        "threat_level_id": "1",
+        "publish_timestamp": "0",
+        "sighting_timestamp": "0",
+        "disable_correlation": false,
+        "extends_uuid": "",
+        "protected": null,
+        "Org": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "Orgc": {
+            "id": "1",
+            "name": "ORGNAME",
+            "uuid": "db42ed51-6736-4823-95d8-92c4556d5478"
+        },
+        "EventTag": []
+    }
+]

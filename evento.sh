@@ -88,13 +88,20 @@ clear
 				
 				
 				
-				fecha=$(date +'%d-%m-%Y')
+				fecha=$(date +'%Y-%m-%d')
 				
-				echo "{'Event':{'date':'${fecha}','threat_level_id':'${amenaza}','info':'${descripcion}','published':${publi2},'analysis':'${analisis}','distribution':'0','Attribute':[{'type':'domain','category':'Network activity','to_ids':false,'distribution':'0','comment':'','value':'test.com'}]}}" > add-event.json
-					  
-				curl -i -H "Accept: application/json" -H "content-type: application/json" -H "Authorization: ${key}" \
-				--data "@add-event.json" -k -X POST https://$url/events
-				
+				echo "{'Event':{'date':'${fecha}','threat_level_id':'${amenaza}','info':'${descripcion}','published':${publi2},'analysis':'${analisis}','distribution':'0','Attribute':[{'type':'domain','category':'Network activity','to_ids':false,'distribution':'0','comment':'','value':'${descripcion}'}]}}" > add-event.json
+				cat add-event.json | tr "'" "\""  >add-event-tr.json
+									    
+				curl -i -H "Accept: application/json" -H "content-type: application/json" -H "Authorization: ${key}" --data "@add-event-tr.json" -k -X POST https://${url}/events
+			
+				rm -rf add-event-tr.json
+				rm -rf add-event.json
+			
+				echo ""
+				echo ""
+				echo ""
+
 			
 				
 				read  -p ""
@@ -114,6 +121,7 @@ clear
 			
 				echo "Eleccion 2"
 				read -p ""
+				
 			
 			elif [[ $eleccion = 3 ]]
 			
@@ -121,8 +129,45 @@ clear
 			
 				clear
 			
-				echo "Eleccion 3"
-				read -p ""
+				echo "Listado de un evento"
+				
+				curl -i -H "Accept: application/json" -H "content-type: application/json" -H "Authorization: ${key}" -k -X GET https://localhost/events > listado.txt
+				clear
+				
+				
+				echo ""
+				echo ""
+				lineas=$(cat listado.txt | grep "info" | wc -l)
+				cat listado.txt | grep "info" > listadoform.txt
+				var=0
+				
+				
+				while  [[ $var -lt $lineas ]]
+					do
+
+						let var=var+1
+						caduno="Evento ${var} - "
+						caddos=$(cat listado.txt | grep "info" | sed -n ${var}p listadoform.txt)
+						
+						echo ${caduno}${caddos}
+						
+						
+					done
+				
+
+				echo ""
+				read -p " Elige un Evento para ver su contenido (NO ID) (1, 2, 3.....): " num
+				
+				rm -rf listado.txt
+				rm -rf listadoform.txt
+				clear
+				
+				curl -i -H "Accept: application/json" -H "content-type: application/json" -H "Authorization: ${key}" -k -X GET https://localhost/events/${num}
+				
+				echo ""
+				read -p "Continuar..."
+				
+			
 			
 			elif [[ $eleccion = 4 ]]
 			
@@ -130,7 +175,39 @@ clear
 			
 				clear
 			
-				echo "Eleccion 4"
+				curl -i -H "Accept: application/json" -H "content-type: application/json" -H "Authorization: ${key}" -k -X GET https://localhost/events > listado.txt
+				clear
+				
+				echo ""
+				echo ""
+				lineas=$(cat listado.txt | grep "info" | wc -l)
+				cat listado.txt | grep "info" > listadoform.txt
+				var=0
+				
+				
+				while  [[ $var -lt $lineas ]]
+					do
+
+						let var=var+1
+						caduno="Evento ${var} - "
+						caddos=$(cat listado.txt | grep "info" | sed -n ${var}p listadoform.txt)
+						
+						echo ${caduno}${caddos}
+						
+						
+					done
+				
+
+				echo ""
+				read -p " Elige un Evento para ver su contenido (NO POR ID) (1, 2 , 3....): " numborrado
+
+				
+	
+				curl -i -H "Accept: application/json" -H "content-type: application/json" -H "Authorization: ${key}" -k -X DELETE https://${url}/events/${numborrado}
+
+				rm -rf listado.txt
+				rm -rf listadoform.txt
+	
 				read -p ""
 			
 			else

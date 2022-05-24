@@ -1,1 +1,0 @@
-{'Event':{'date':'23-05-2022','threat_level_id':'2','info':'BASHMISP','published':true,'analysis':'2','distribution':'0','Attribute':[{'type':'domain','category':'Network activity','to_ids':false,'distribution':'0','comment':'','value':'test.com'}]}}
