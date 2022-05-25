@@ -1,15 +1,15 @@
 HTTP/1.1 200 OK
-Date: Wed, 25 May 2022 08:22:03 GMT
+Date: Wed, 25 May 2022 07:59:13 GMT
 Server: Apache/2.4.41 (Ubuntu)
 Strict-Transport-Security: max-age=31536000; includeSubdomains;
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 Upgrade: h2
 Connection: Upgrade
-Set-Cookie: MISP-8ec7dd4f-c162-413b-b8a9-9b0fb4e8b082=l36ieulrlm3dsu1873lp6ol9kjtp321r; expires=Fri, 27-May-2022 20:22:03 GMT; Max-Age=216000; path=/; secure; HttpOnly; SameSite=Lax
-Set-Cookie: MISP-8ec7dd4f-c162-413b-b8a9-9b0fb4e8b082=l36ieulrlm3dsu1873lp6ol9kjtp321r; expires=Fri, 27-May-2022 20:22:03 GMT; Max-Age=216000; path=/; secure; HttpOnly; SameSite=Lax
+Set-Cookie: MISP-8ec7dd4f-c162-413b-b8a9-9b0fb4e8b082=cpiutmahlqb44o5ni2jqe989k4bdi3ev; expires=Fri, 27-May-2022 19:59:13 GMT; Max-Age=216000; path=/; secure; HttpOnly; SameSite=Lax
+Set-Cookie: MISP-8ec7dd4f-c162-413b-b8a9-9b0fb4e8b082=cpiutmahlqb44o5ni2jqe989k4bdi3ev; expires=Fri, 27-May-2022 19:59:13 GMT; Max-Age=216000; path=/; secure; HttpOnly; SameSite=Lax
 Expires: Mon, 26 Jul 1997 05:00:00 GMT
-Last-Modified: Wed, 25 May 2022 08:22:03 GMT
+Last-Modified: Wed, 25 May 2022 07:59:13 GMT
 Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
 X-Username: usuario@admin.test/API/9
 X-Result-Count: 10
@@ -58,9 +58,9 @@ Content-Type: application/json; charset=UTF-8
         "uuid": "3d6b6c11-2990-43e1-a553-3042fd512935",
         "published": false,
         "analysis": "0",
-        "attribute_count": "3",
+        "attribute_count": "1",
         "orgc_id": "1",
-        "timestamp": "1653465716",
+        "timestamp": "1652946911",
         "distribution": "0",
         "sharing_group_id": "0",
         "proposal_email_lock": false,
